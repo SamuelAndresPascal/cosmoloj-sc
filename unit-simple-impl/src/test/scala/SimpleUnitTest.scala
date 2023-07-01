@@ -58,7 +58,7 @@ class SimpleUnitTest {
         val cPerM = SimpleDerivedUnit.of(c, m.factor(-1))
         val kPerM = SimpleDerivedUnit.of(k, m.factor(-1))
         val kPerMToCPerM = kPerM.getConverterTo(cPerM)
-        Assertions.assertEquals(4.0, kPerMToCPerM.convert(3.0), 1e-10)
+        Assertions.assertEquals(3.0, kPerMToCPerM.convert(3.0), 1e-10)
         Assertions.assertEquals(3.0, kPerMToCPerM.inverse.convert(3.0), 1e-10)
     }
 
