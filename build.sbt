@@ -21,6 +21,7 @@ lazy val unitSimpleImpl = (project in file("unit-simple-impl"))
   .settings(
     name := "unit-simple-impl",
     idePackagePrefix := Some("com.cosmoloj.sc.unit.simple.impl"),
-    libraryDependencies += "org.junit.jupiter" % "junit-jupiter-api" % "5.9.3" % Test
+    libraryDependencies += "org.junit.jupiter" % "junit-jupiter-api" % "5.9.3" % Test,
+    libraryDependencies += "net.aichler" % "jupiter-interface" % "0.11.1" % Test
   )
   .dependsOn(unitSimpleApi)

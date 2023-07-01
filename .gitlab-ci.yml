@@ -1,0 +1,25 @@
+before_script:
+  - export PATH=$PATH:$SBT_HOME/bin:$JAVA_HOME/bin
+  - java -version
+  - sbt -version
+  - pwd
+  - echo $HOME
+
+stages:
+  - compile
+  - test
+
+compile:
+  stage: compile
+  script:
+    - sbt compile
+  artifacts:
+    paths:
+      - target/*
+      - ./*/target/*
+    expire_in: 2 days
+
+test:
+  stage: test
+  script:
+    - sbt test
