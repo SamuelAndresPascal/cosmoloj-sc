@@ -1,4 +1,4 @@
-# Simple Unit (implémentation Groovy - implémentation de référence)
+# Simple Unit (implémentation Scala - implémentation de référence)
 
 ## Utilisation
 
