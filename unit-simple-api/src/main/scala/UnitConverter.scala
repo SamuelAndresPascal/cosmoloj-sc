@@ -1,5 +1,7 @@
 package com.cosmoloj.sc.unit.simple.api
 
+import scala.annotation.targetName
+
 trait UnitConverter {
 
   def scale: Double
@@ -15,4 +17,6 @@ trait UnitConverter {
   def convert(value: Double): Double
 
   def concatenate(unitConverter: UnitConverter): UnitConverter
+
+  def unary_~ : UnitConverter = inverse
 }

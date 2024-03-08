@@ -10,4 +10,8 @@ trait Factor {
 
   def power: Double = if (denominator == 1) numerator.doubleValue() else numerator / denominator
 
+  def *(value: Any): AbstractUnit
+  
+  def /(value: Any): AbstractUnit
+
 }
