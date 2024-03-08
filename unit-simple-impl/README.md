@@ -93,7 +93,7 @@ msToKmh.inverse.convert(18.0) // 5
 
 ## Utilisation avec surcharge d'opérateurs
 
-L'implémentation en Kotlin de Simple Unit utilise la surcharge d'opérateurs utilisable dans ce langage comme
+L'implémentation en Scala de Simple Unit utilise la surcharge d'opérateurs utilisable dans ce langage comme
 alternative aux méthodes standards.
 
 Utilisation des unités transformées :
