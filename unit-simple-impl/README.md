@@ -1,5 +1,8 @@
 # Simple Unit (implémentation Scala - implémentation de référence)
 
+* [Utilisation standard](#Utilisation-standard)
+* [Utilisation avec surcharge des opérateurs](#Utilisation-avec-surcharge-des-opérateurs)
+
 ## Utilisation standard
 
 L'utilisation standard se réfère aux méthodes implémentant la spécification Simple Unit.
@@ -91,7 +94,7 @@ msToKmh.inverse.convert(18.0) // 5
 ```
 
 
-## Utilisation avec surcharge d'opérateurs
+## Utilisation avec surcharge des opérateurs
 
 L'implémentation en Scala de Simple Unit utilise la surcharge d'opérateurs utilisable dans ce langage comme
 alternative aux méthodes standards.
