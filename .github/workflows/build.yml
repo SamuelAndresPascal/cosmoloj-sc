@@ -1,0 +1,25 @@
+name: build
+run-name: ${{ github.actor }}
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: '30 5 * * 0'
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'oracle'
+          java-version: '22'
+      - uses: Jtalk/setup-sbt@v2
+        with:
+          version: 1.9.8
+      - run: java -version
+      - run: sbt --version
+      - run: sbt compile
